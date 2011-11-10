@@ -1,0 +1,289 @@
+*{
+margin:0;
+padding:0;
+}
+
+
+/* Common Properties */
+
+body{
+font-size:16px;
+line-height:25px;
+background:#222 url(../images/wood.jpg);
+text-shadow:1px 1px 1px #000;
+font-family:'Neucha', arial, serif;
+color:#CCC;
+}
+a{
+color:#ccc;
+text-decoration:none;
+border-bottom:#999 solid 1px;
+}
+input{
+font-family:'Neucha', arial, serif;
+background:url(../images/transp.png);
+border:0;
+outline:0;
+padding:5px 8px;
+color:#999;
+font-size:16px;
+line-height:18px;
+}
+
+
+/* Outer Wrap */
+
+#outer-wrap{
+font-size:1.1em;
+width:600px;
+padding:20px 25px;
+margin:20px auto 0 auto;
+}
+
+
+/* Admin Bar at the Top */
+
+#absummon{
+display:none;
+width:100%;
+top:1px;
+height:8px;
+background:#111;
+border-bottom:#222 solid 1px;
+position:fixed;
+}
+#adminbar{
+display:none;
+top:0px;
+width:100%;
+min-width:1000px;
+position:fixed;
+background:#111;
+padding:0;
+border-bottom:#222 solid 1px;
+font-size:.8em;
+height:38px;
+}
+#adminbar ul{
+width:1000px;
+margin:0 auto;
+list-style:none;
+}
+#adminbar ul li{
+float:left;
+cursor:pointer;
+margin:0 8px;
+}
+#adminbar td{
+padding:0 2px;
+}
+.inactive{
+cursor:text;
+}
+#adminbar table{
+position:absolute;
+display:inline;
+}
+#adminbar input{
+font-size:1em;
+line-height:.9em;
+margin-top:4px;
+}
+
+
+/* Main Wrap & Tweet List*/
+#main-wrap{
+text-align:left;
+width:800px;
+margin:60px auto;
+text-shadow:0px 0px 0px #000;
+}
+#main-wrap a{
+border:0;
+font-weight:bold;
+}
+#main-wrap table td, #hlmsg table td{
+vertical-align:top;
+}
+#main-wrap table img.dp, #hlmsg table img.dp{
+height:48px;
+width:48px;
+margin:0 auto;
+}
+#main-wrap .user{
+font-weight:bold;
+}
+#main-wrap #tweetlist .onetweet, #hlmsg #tweetlist .onetweet{
+margin:20px 0;
+padding:15px 20px;
+background:url(../images/transp.png);
+}
+#main-wrap table.tbone .tdtweet, #hlmsg table.tbone .tdtweet{
+padding:0 8px;
+}
+#main-wrap .meta, #hlmsg .meta{
+font-style:italic;
+opacity:0.5;
+filter:alpha(opacity=50);
+background:url(../images/transp.png);
+padding:6px 15px;
+margin-top:3px;
+}
+
+
+/* The Main Form */
+
+#subform{
+display:none;
+margin-top:20px;
+margin-left:40px;
+}
+table#mainptform input{
+border:0;
+outline:0;
+padding:8px;
+width:220px;
+margin-left:50px;
+}
+table#mainptform label{
+padding-left:5px;
+}
+table#mainptform input#sub{
+width:50px;
+margin:0 10px;
+}
+
+
+/* Extra Options Form and Link */
+
+#moreoplink{
+cursor:pointer;
+width:110px;
+font-weight:bold;
+margin-left:60px;
+margin-top:10px;
+font-size:.9em;
+font-style:italic;
+}
+table#moreop{
+margin-top:20px;
+margin-left:7px;
+padding:15px 20px;
+background:url(../images/transp.png);
+}
+table#moreop td{
+padding:5px;
+}
+table#moreop input{
+border:0;
+padding:5px;
+}
+
+
+/* Alert Message Status Bar at the Bottom */
+
+#statusbar{
+display:none;
+height:38px;
+line-height:40px;
+background:#111;
+text-align:center;
+position:fixed;
+width:100%;
+min-width:1000px;
+bottom:0px;
+border-top:#222 solid 2px;
+}
+
+
+/* Help Information */
+
+.info,#info{
+font-size:1.1em;
+line-height:1.8em;
+margin-top:40px;
+margin-bottom:10px;
+margin-left:40px;
+}
+.info ul,#info ul{
+list-style:none;
+}
+
+
+/* Tweet Highlight */
+
+#highlightzone{
+display:none;
+position:fixed;
+margin:0 auto;
+top:0px;
+left:0px;
+background:url(../images/transpp.png);
+}
+#highlightzone #hlmsg{
+position:fixed;
+width:760px;
+background:#111;
+padding:10px 15px;
+border:#222 solid 1px;
+font-size:20px;
+}
+#hlmsg .onetweet{
+margin:10px;
+}
+
+
+/* Header with Logo */
+
+.header{
+width:350px;
+margin:20px 0 10px 45px;
+}
+.header td.logo{
+width:70px;
+}
+.header td.logo img{
+height:70px;
+width:70px;
+}
+.header td.title{
+text-align:left;
+font-size:2.8em;
+font-weight:bold;
+color:#297788;
+text-shadow:2px 2px 2px #fff;
+}
+
+
+/* Set All Border Radius */
+
+input,#highlightzone #hlmsg,table#moreop,#main-wrap .meta, #hlmsg .meta,#main-wrap #tweetlist .onetweet, #hlmsg #tweetlist .onetweet,#main-wrap table img.dp, #hlmsg table img.dp{
+border-radius:5px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+noscript{
+margin-top:80px;
+display:block;
+text-align:center;
+font-size:2.2em;
+line-height:1.5em;
+font-weight:bold;
+}
+noscript .info{
+font-size:18px;
+}
+noscript .header{
+width:350px;
+margin:10px auto;
+}
+noscript .header td.title{
+font-size:48px;
+}
+
+
+#info{
+display:none;
+}
